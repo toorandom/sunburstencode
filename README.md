@@ -2,7 +2,7 @@
 Encoder of MAC, Domain and MachineGUID to get the Sunburst GUID and compare against SunburstDomainDecoder.zip
 
 
-## Usage:
+## Usage (tested on Ubuntu/Cygwin: Bash):
 ```
 $ ./sunburstEncoder.sh 00:11:22:AA:BB:CC microsoft.com aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
 0x57 0xdd 0x0d 0x67 0x5d 0x25 0x7a 0x9b
