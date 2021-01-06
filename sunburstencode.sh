@@ -26,6 +26,12 @@ mac="$1"
 dom="$2"
 guid="$3"
 
+# We remove the semicolons since SUNBURST uses
+# NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces({mac = nic.GetPhysicalAddress()}
+# to retrieve the MAC and according to the reversing of Sunburst in https://github.com/ITAYC0HEN/SUNBURST-Cracked/blob/main/OrionImprovementBusinessLayer_modified.cs 
+# line 392 calls the MAC string that is going to be used before MD5  which is a function from 376-398 via nic.GetPhysicalAddress().ToString() which
+# does not include semicolons : and is uppercase, for example 00AABBCCDDEE  is returned, so we transform to that form.
+
 mac=$(echo $mac | sed 's/://g' | tr [:lower:] [:upper:])
 s1Guid=$(echo -n $mac$dom$guid | md5sum | awk '{print $1}')
 s1Guidlen=$[$(echo -n $s1Guid | wc -c)/2]
