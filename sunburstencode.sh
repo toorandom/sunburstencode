@@ -48,4 +48,4 @@ for i in $(seq 0 $[s1Guidlen/2 - 1])
 do
         printf "%02X" "$((${x1[$i]} ^ ${x2[$i]}))"
 done
-printf "\nLet me know if it worked since this is maybe gibberish, toorandom@gmail.com"
+printf "\nLet me know if it worked since this is maybe gibberish, toorandom@gmail.com\n"
