@@ -2,11 +2,11 @@
 
 # sunburst Encoder
 # Give me as arguments
-# arg1 mac:  00:11:22:AA:BB:CC"
+# arg1 mac:  00:11:22:AA:BB:CC
 # arg2 domain:  domain.com
 # arg3 guid:  aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
 #
-# arg1 must be the first UP interface after loopback in uppercase
+# arg1 must be the first UP interface MAC (uppercase) after loopback in uppercase (or try all)
 # arg2 is the TLD of the machine
 # arg3 is the contents of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography
 #
