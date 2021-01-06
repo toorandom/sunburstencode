@@ -8,7 +8,7 @@
 #
 # arg1 must be the first UP interface MAC (uppercase) after loopback in uppercase (or try all)
 # arg2 is the TLD of the machine
-# arg3 is the contents of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography
+# arg3 is the contents of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MachineGuid
 #
 # This easy code is based on: https://www.netresec.com/?page=Blog&month=2020-12&post=Reassembling-Victim-Domain-Fragments-from-SUNBURST-DNS
 #
