@@ -11,7 +11,9 @@ see help for more info
 * ./sbencode macs.txt guids.txt domain.com
 
 * I tested a known hash
-* (MAC:112233AABBCC,guid=ffff1f6c-b2f5-461f-82a9-59370875aaaa) -> 56B8C845F49393DB
+* MAC:112233AABBCC
+* guid=ffff1f6c-b2f5-461f-82a9-59370875aaaa
+* obtaining with the domain the hash: 56B8C845F49393DB
 
 * Eduardo Ruiz Duarte
 * toorandom@gmail.com
