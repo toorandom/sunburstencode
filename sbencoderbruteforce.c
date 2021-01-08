@@ -66,7 +66,7 @@ main (int argc, char **argv)
   if (argc < 4)
     {
       fprintf (stderr,
-          "arg1 must be the MAC file list in uppercase without \":\"\narg2 must be the GUID file list in lowercase\narg3 the domain to be used\nEduardo@shell.com\n");
+          "arg1 must be the MAC file list in uppercase without \":\"\narg2 must be the GUID file list in lowercase\narg3 the domain to be used\ntoorandom@gmail.com\n");
       exit (EXIT_FAILURE);
     }
 
