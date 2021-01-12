@@ -26,7 +26,6 @@ see help for more info
 #include <stdio.h>
 #include <stdlib.h>
 
-
 #define MACLEN 12
 #define MAXDOM 128
 #define GUIDLEN 36
@@ -43,7 +42,6 @@ sunbursthash (uint8_t * mac, uint8_t * dom, uint8_t * guid, uint8_t * hashy)
   MD5_Final (hashy, &md5);
 }
 
-
 void
 combinehash (uint8_t * sbhash, uint8_t * final)
 {
@@ -51,8 +49,6 @@ combinehash (uint8_t * sbhash, uint8_t * final)
   for (i = 0; i < 8; i++)
     final[i] = sbhash[i] ^ sbhash[i + 8];
 }
-
-
 
 int
 main (int argc, char **argv)
